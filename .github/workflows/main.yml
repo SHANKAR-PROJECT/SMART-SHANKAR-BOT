@@ -1,4 +1,4 @@
-name: Node.js Bot with Auto Restart
+name: Node.js Bot
 
 on:
   push:
@@ -29,8 +29,4 @@ jobs:
 
       # Step 4: Start the bot
       - name: Start the Bot
-        run: |
-          while true; do
-            npm start || echo "Bot crashed. Restarting..."
-            sleep 5
-          done
+        run: npm start
