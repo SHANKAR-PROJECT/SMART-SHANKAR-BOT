@@ -4,7 +4,8 @@
   "description": "Shankar bot project.",
   "main": "SHANKAR.js",
   "scripts": {
-    "start": "node index",
+    "vercel-build": "npm install", 
+    "start": "node index.js",
     "login": "node login",
     "test": "node --trace-warnings --use_strict --async-stack-traces mirai"
   },
